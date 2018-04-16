@@ -50,20 +50,20 @@
           <!-- <img src="img/white-logo.png" alt="SHEQ Wallet" width="200"> -->
           <span class="sr-only">SHEQ</span>
         </a>
-        <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar">
-        &#9776;
+        <!-- <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbar" aria-expanded="false" aria-controls="collapsingNavbar"> -->
+        <!-- &#9776; -->
       </a>
         <!-- <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUser" aria-expanded="false" aria-controls="collapsingMobileUser">
           <span class="icon-user"></span>
         </a> -->
-        <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar">
+        <!-- <div id="collapsingNavbar" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbar"> -->
           <ul class="nav navbar-nav pull-xs-right">
             <!-- <li class="nav-item nav-item-toggable active">
               <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
             </li> -->
-            <li class="nav-item nav-item-toggable">
+           <!--  <li class="nav-item nav-item-toggable">
               <a class="nav-link scroll-top" href="wallet">Wallet</a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item nav-item-toggable">
               <a class="nav-link" href="#"></a>
             </li> -->
@@ -137,14 +137,37 @@
     <!-- Hero Section
     ================================================== -->
 
- <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner" style="background: #5b296d">
+ <header class="jumbotron bg-inverse text-xs-center center-vertically" role="banner" style="background: #5b296d; height:100%">
       <div class="container">
         <img src="img/white-logo.png" class="img-responsive" >
-        <ul class="nav nav-inline social-share">
-          <li class="nav-item"><a class="nav-link" href="#"><span class="icon-twitter"></span> 1024</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><span class="icon-facebook"></span> 562</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><span class="icon-linkedin"></span> 356</a></li>
-        </ul>
+<br>
+<br>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+            <!-- <h3 class="text-xs-center m-b-3">Log In </h3> -->
+            <form action="wallet" method="post">
+          <div class="row">
+
+          <div class="form-group has-icon-left form-control-email">
+            <label class="sr-only" for="inputEmail">Email address</label>
+            <input type="email" class="form-control form-control-lg" id="inputEmail" placeholder="Email address" autocomplete="off">
+          </div>
+          <div class="form-group has-icon-left form-control-password">
+            <label class="sr-only" for="inputPassword">Enter a password</label>
+            <input type="password" class="form-control form-control-lg" id="inputPassword" placeholder="Enter a password" autocomplete="off">
+          </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+          </div>
+          <div class="col-md-4"></div>
+</div>
+
+        
+
+
       </div>
     </header>
 
@@ -156,21 +179,21 @@
     <!-- Intro
     ================================================== -->
 
-    <section class="section-intro bg-faded text-xs-center">
+    <!-- <section class="section-intro bg-faded text-xs-center">
       <div class="container">
         <h3 class="wp wp-1">Download SHEQ wallet now</h3>
 
-        <!-- <p class="lead wp wp-2">Craft memorable, emotive experiences with our range of beautiful UI elements.</p> -->
+        
        <div class="text-center">
          <img src="img/buylinks.png" alt="iPad mock" class="img-responsive center-block" width="500">
        </div> 
       </div>
-    </section>
+    </section> -->
 
     <!-- Features
     ================================================== -->
 
-    <section class="section-features text-xs-center">
+  <!--   <section class="section-features text-xs-center">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -179,7 +202,7 @@
                 <span class="icon-pen display-1"></span>
                 <h4 class="card-title">Simple</h4>
                 <h6 class="card-subtitle text-muted"></h6>
-               <!--  <p class="card-text">We make using cryptocurrencies safe, simple, and fun. Securely store your bitcoin and instantly transact with anyone in the world.</p> -->
+                <p class="card-text">We make using cryptocurrencies safe, simple, and fun. Securely store your bitcoin and instantly transact with anyone in the world.</p>
               </div>
             </div>
           </div>
@@ -189,7 +212,7 @@
                 <span class="icon-thunderbolt display-1"></span>
                 <h4 class="card-title">Safe and Secure</h4>
                 <h6 class="card-subtitle text-muted"></h6>
-                <!-- <p class="card-text">Our step-by-step Security Center helps you backup your funds, and protect them from unauthorized access.</p> -->
+                <p class="card-text">Our step-by-step Security Center helps you backup your funds, and protect them from unauthorized access.</p>
               </div>
             </div>
           </div>
@@ -199,13 +222,13 @@
                 <span class="icon-heart display-1"></span>
                 <h4 class="card-title">24/7 Support</h4>
                 <h6 class="card-subtitle text-muted"></h6>
-                <!-- <p class="card-text">Should you need help or have a question, our best in class support team will always be there for you.</p> -->
+                <p class="card-text">Should you need help or have a question, our best in class support team will always be there for you.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Videos
     ================================================== -->
@@ -482,7 +505,7 @@
 
     <!-- Footer
     ================================================== -->
-
+<!-- 
     <footer class="section-footer bg-inverse" role="contentinfo" id="signup">
       <div class="container">
         <div class="row">
@@ -493,11 +516,11 @@
               </div>
               <small class="media-body media-bottom">
                 &copy; SHEQ  2018. <br>
-                Powered by <!-- Platinos, exclusively for --> FYL.
+                Powered by FYL.
                 </small>
             </div>
           </div>
-          <!-- <div class="col-md-6 col-lg-7">
+          <div class="col-md-6 col-lg-7">
             <ul class="nav nav-inline">
               <li class="nav-item active">
                 <a class="nav-link" href="./">Wallet<span class="sr-only">(current)</span></a>
@@ -506,10 +529,10 @@
               <li class="nav-item"><a class="nav-link" href="#">Terms & Conditions</a></li>
               <li class="nav-item"><a class="nav-link scroll-top" href="#totop">Back to top <span class="icon-caret-up"></span></a></li>
             </ul>
-          </div> -->
+          </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/landio.min.js"></script>
